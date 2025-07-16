@@ -1,0 +1,405 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+/*changing the font using google fonts*/
+.meie-script-regular {
+  font-family: "Meie Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.quintessential-regular {
+  font-family: "Quintessential", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.petit-formal-script-regular {
+  font-family: "Petit Formal Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.manufacturing-consent-regular {
+  font-family: "Manufacturing Consent", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+/*top-bar*/
+.top-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #b36462;
+	padding: 10px 20px;
+	text-decoration: none;
+	list-style-type: none;
+}
+.logo-title {
+	display: flex;
+}
+.logo {
+	width: 60px;
+	height: 60px;
+	margin-right: 10px;
+	border-radius: 100%;
+}
+.title {
+	font-family: Quintessential;
+	color: #181847;
+	font-size: 32px;
+}
+.nav-item {
+	display: flex;
+}
+.nav-list{
+	display: flex;
+	gap: 10px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.nav-list li{
+	list-style: none;
+}
+.nav-list li a{
+	display: inline-block;
+	text-decoration: none;
+	color: #141359;
+	padding: 6px 8px;
+	border: 2px solid #141359;
+	border-radius: 12px;
+	background-color: #b36462;
+	font-weight: bold;
+	text-shadow: 1px 2px pink;	
+}
+.nav-list li a:hover {
+	background-color: #1b1847;
+	color: #1e838a;
+}
+.nav-list li a:active{
+	color: orange;
+}
+/*the drop down menu*/
+.dropdown {
+	position: relative;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	top: 100%;            /* appears below the parent */
+	left: 0;
+	background-color: #b36462;
+	border: 2px solid #141359;
+	border-radius: 8px;
+	padding: 0;
+	list-style: none;
+	z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.dropdown-content li a {
+	display: block;
+	padding: 8px 12px;
+	color: #141359;
+	text-decoration: none;
+	font-weight: bold;
+	border-bottom: 1px solid #141359;
+}
+.dropdown-content li a:hover {
+	background-color: #1b1847;
+}
+.dropdown-content li a:active {
+	color: orange;
+}
+
+
+
+/*header section image*/
+.header-section{
+	height: 170px;
+	background-image: url("images/pj.jpg");
+	background-repeat: no-repeaet;
+	background-size: 100% 400px;
+	color: #0f1e66; 
+	text-align: center;
+	font-size: 30;
+	font-family: quintessential;
+}
+.header-section button{
+	background-color: #b36462;
+	color: #0f1e66;
+	font-size: 25;
+	font-family: manufacturing consent;
+}
+.header-section button:hover{
+	background-color: pink;
+}
+
+
+
+/* class products*/
+.product-container{
+	display: grid;
+	grid-template-columns: auto auto auto auto;   
+	gap: 3px;
+	padding: 3px;
+}
+.products{
+	border: 2px solid #141359;     /* dark blue */
+	border-radius: 25px;
+	margin: 5px;
+	padding: 20px;
+	width: 300px;
+	text-align: center;
+}
+.products img{
+	width: 250px;
+	height: 200px;
+}
+.products p{
+	color: #1b1847;  /* dark blue*/
+	font-size: 19;
+}
+.products i{
+	font-weight: italic;
+	display: block;
+	font-size: 19; 
+}
+.products button{
+	border: 2px solid;
+	border-radius: 20px; 
+	background-color: #1b1847;
+	color: #1e838a;
+	padding: 7px 9px 7px 9px;
+	width: 100px;
+	height: 50px;
+	font-size: 15;
+	margin-top: 5px;
+	font-family: manufacturing consent;
+}
+.products button:hover{
+	background-color: #b36462;
+	color: #141359;
+	cursor: pointer;
+}
+.products button:active{
+	color: orange;
+}
+.word{
+	text-align: center;
+	font-family: meie script;
+	font-size: 28;
+	border: 2px solid;
+	border-radius: 20px;
+	background-color: #1b1847;
+	color: #1e838a;
+}
+    /*search button*/
+.search-wrapper{
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+}
+.search-container {
+	display: flex;
+	align-items: center;
+}
+.search-box {
+	padding: 8px 12px;
+	font-size: 16px;
+	border: 2px solid #1b1847;
+	border-radius: 6px 0 0 6px;
+	outline: none;
+	width: 250px;
+}
+.search-button {
+	padding: 11px 14px;
+	background-color: #1b1847;
+	color: #1e838a;
+	border: 2px solid #1b1847;
+	border-left: none;
+	border-radius: 0 6px 6px 0;
+	cursor: pointer;
+}
+.search-button:hover{
+	background-color: #1e838a;
+	color: #1b1847;
+}
+.search-button:active{
+	color: orange;
+}
+.more{
+	display: flex;
+}
+.my-button{
+	margin-left: auto;
+	border: 2px solid;
+    border-radius: 20px;	
+	background-color: #1b1847;
+	color: #1e838a;
+	padding: 10px;
+	font-size: 20;
+	font-family: manufacturing consent;
+}
+.my-button:hover{
+	background-color: #1e838a;
+	color: #b36462;
+}
+.my-button:active{
+	color: orange;
+}
+
+
+
+/* contact us section*/
+.contact-form {
+	max-width: 400px;
+	margin: 30px auto;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.contact-form input, .contact-form button {
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+}
+.contact-form button {
+	background-color: #b36462;
+	color: white;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+.contact-form button:hover {
+	background-color: pink;
+}
+.bdy {
+	background-color: #f9f9f9;
+	font-family: 'Segoe UI', sans-serif;
+}
+.sect {
+	padding: 40px 20px;
+	background-color: #fff;
+	border-radius: 15px;
+	max-width: 800px;
+	margin: 20px auto;
+	box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+	text-align: center;
+}
+.sect button {
+	background-color: #b36462;
+	color: white;
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+}
+.sect button:hover {
+	background-color: pink;
+}
+
+
+
+
+/*the about us*/
+.people{
+	text-align: center;
+	font-size: 22;
+	background-color: #1b1847;
+	color: #b36462;
+	font-family: manufacturing consent;
+}
+.people b{
+	color: #1e838a;
+}
+.team{
+	text-align: center;
+	font-size: 32;
+	color: #1e838a;
+}
+.group-container{
+	display: grid;
+	grid-template-columns: repeat(4,1fr);   
+	gap: 5px;
+	padding: 5px;
+}
+.group img{
+	width: 250px;
+	height: 250px;
+}
+.group p{
+	color: #1b1847;       /* dark blue*/
+	font-size: 20;
+	font-weight: bold;
+}
+.group i{
+	font-weight: italic;
+	color: #1b1847;       
+	font-size: 20;
+}
+
+
+/*login section*/
+.section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;              /* full viewport height */
+	margin: 50px;
+	background: #e0e5ec;        /* match background */
+}
+.neumorphic {
+	background: #e0e5ec;
+	border-radius: 20px;
+	box-shadow: 50px 10px 20px #a3b1c6, -10px -10px 20px #ffffff;
+	font-size: 30;
+	font-family: manufacturing consent;
+}
+.neumorphic-inset {
+	background: #e0e5ec;
+	border-radius: 20px;
+	box-shadow: 50px 10px 20px #a3b1c6, inset -10px -10px 20px #ffffff;
+}
+.neumorphic-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	width: 400px;
+	text-align: center;
+	gap: 10px;
+}
+.neumorphic-button:hover{
+	background-color: black;
+	color: white;
+}
+.neumorphic-button:active{
+	color: orange;
+}
+
+
+/*footer section*/
+.footer {
+	background-color: #1b1847;    /* dark blue */
+	color:  #b36462;             /* pink */
+	text-align: center;
+	font-family: petit formal script;
+}
+.footer a{
+	text-decoration: none;
+	color: #1e838a;
+	font-size: 20;
+	padding: 5px;
+}
+.footer a:hover{
+	color: orange;
+}
